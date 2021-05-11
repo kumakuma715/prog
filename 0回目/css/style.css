@@ -1,0 +1,473 @@
+/* ここから下に記載していく */
+body{
+    width: 1365px;
+    margin: auto;
+}
+
+
+/* headerコンテンツ指定 始点*/
+.headerTopImg{
+    margin: auto;
+    padding-left: 50px;
+}
+
+.headerTopImg:hover{
+    opacity: 0.7;
+}
+
+.headerTop{
+    width: 1365px;
+    padding:10px 50px 10px 0px;
+}
+
+.headerTopContents a{
+    color: black;
+    text-decoration: none;
+    padding: 50px 50px 50px 0px;    
+}
+
+.headerTopContents{
+    margin-top: -50px;
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+.headerTopContents a:hover{
+    color: rgb(155, 152, 152);
+}
+
+.headerContentsTitle{
+    width:1365px;
+    margin:0 auto;
+    text-align:center;
+    color:rgb(196, 138, 30);
+    padding-top: 200px;
+    padding-bottom: ;
+    
+}
+
+.headerContentsTitle h1{
+    font-size: 60px;
+    font-weight:bold;
+    letter-spacing:5px;
+    padding-bottom: 30px;
+}
+
+.headerContentsTitle h2{
+    font-size: 35px;
+    
+}
+
+
+.headerContents{
+    height: 500px;
+    width: 1365px;
+    background-image: url(../img/topimg.jpg);
+    color: white;
+    padding-top: auto;
+    padding-bottom: auto;  
+}
+
+.headerContents:hover{
+    background-image: url(../img/チーズ笑顔.gif);
+    opacity: 0.6;
+}
+
+
+
+.headerTop{
+    margin: 0px;
+}   
+
+h1{
+    padding-bottom: 30px;
+}
+
+/* headerコンテンツ指定 終点*/
+
+/* aboutコンテンツ指定 始点*/
+.aboutWrapper{
+    width: 1365px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.aboutTitle{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 auto;
+}
+
+.aboutContents p{
+    padding-bottom: 40px;
+}
+
+.aboutContents{
+    padding-bottom: 30px;
+}
+
+.aboutImgBox{
+    width: 1365px;
+}
+
+.aboutImg{
+    width: 25%;
+}
+/* aboutコンテンツ指定 終点*/
+
+/* 文字コンテンツ指定 始点*/
+.aboutTitle h3{
+    color: #ffd61a;
+
+}
+
+.newsTitle h3{
+    color: #ffd61a;
+}
+
+h3{
+    font-size: 24px;
+    font-weight:bold;
+    padding-bottom: 30px;
+}
+
+h4{
+    font-size: 18px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 30px;
+}
+/* 文字コンテンツ指定 終点*/
+
+/* course コンテンツ指定 始点*/
+.courseWrapper{
+    width: 1365px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.courseContents{
+    background-color: #fafafa9e;
+    width: 1365px;
+    height: 1380px;
+}
+
+.courseTitle h3{
+    padding-bottom: 40px;
+}
+
+.courseTitle{
+    margin-bottom: 60px;
+}
+
+.CB1{
+    text-align:left;
+    display:flex;
+}
+
+.CB2{
+    text-align:right;
+    display: flex;
+}
+
+.CB3{
+    text-align:left;
+    display: flex;
+}
+
+.courseImgBox{
+    display: flexbox;
+    width: 682.5px;
+}
+
+.courseText{
+    width: 682.5px;
+    height:457px;
+    display:inline-flexbox;
+ 
+}
+
+.CT1{
+   margin-left: 50px;
+
+}
+
+.CT2{
+    margin-left: 200px;
+}
+
+.CT3{
+    margin-left: 50px;
+
+}
+
+.courseText p{
+    text-align: left;
+}
+
+.courseText h3{
+    text-align: left;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+/* course コンテンツ指定 終点*/
+
+/* news コンテンツ指定 始点*/
+.newsWrapper{
+    width: 1365px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.newsContents{
+    display: flex;
+    text-align: center;
+    padding-left: 127.5px;
+}
+
+.newsTitle{
+    margin-bottom: 60px;
+}
+
+.newsBox{
+    width: 350px;
+    float: left;
+    padding-right: 30px;
+}
+
+.newsBox:hover{
+    opacity: 0.7;
+    border: 1px solid rgba(226, 226, 147, 0.481);
+}
+
+.newsBox p{
+    padding-left: 0px;
+    padding-bottom: 24px;
+    text-align: left;
+}
+
+
+.newsImg{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.newsButton{
+    width: 1365px;
+    height:120px;
+    padding-top:36px;
+    padding-bottom: 60px;
+}
+
+.btn{
+    display:inline-block;
+    width: 350px;
+    height: 28px;
+    margin: 0px auto;
+    font-size: 22px;
+    color: white;
+    padding-top:22px;
+    padding-bottom: 20px;
+    background-color:#ffd61a;
+    text-decoration: none;
+    text-align: center;
+}
+
+.More:hover{
+    opacity:0.7;
+  }
+/* news コンテンツ指定 終点*/
+  
+/* access コンテンツ指定 始点*/
+.accessWrapper{
+    width: 1365px;
+    text-align: center;
+    background-color: #fafafa9e;
+}
+
+.accessTitle h3{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.accessTitle h4{
+    padding-bottom: 60px;
+}
+
+.accessMap{
+    width:100%;
+}
+
+.accessMapContents{
+    width: 1365px;
+    padding-top: 60px;
+    padding-bottom: 47px;
+    margin: 0 0 0 20px;
+    font-size:16px;
+    flex-wrap: wrap;
+}
+
+.accessMapContents dl{ 
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.accessMapContents dt{
+    width: 146px;
+    padding: 0 0 13px 0;
+    margin: 0 0 0 420px;
+    text-align: left;
+
+}
+
+.accessMapContents dd{
+    width: 779px;
+    padding: 0 0 13px 0;
+    margin:0 0 0 20px;
+    text-align: left;
+}
+/* access コンテンツ指定 終点*/
+
+/* contact コンテンツ指定 始点*/
+.contactWrapper{
+    width: 1365px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.contactTitle{
+    padding-bottom: 60px;
+}
+
+.contactContents p{
+    padding-bottom: 30px;
+}
+
+.contactContents{
+    padding-bottom: 40px;
+}
+
+.contactForm{
+    width: 1365px;
+    padding-top:30px;
+    padding-bottom: 47px;
+    margin: 0 0 0 20px;
+    font-size:16px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.contactForm dl{ 
+    
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.contactForm dt{
+    width: 250px;
+    padding: 0 50px 13px 46px;
+    margin: 0 0 0 319px;
+    text-align: left;
+
+    border-top:solid 1px #cacaca;
+    border-bottom:solid 1px #cacaca;
+    border-collapse: collapse;
+    border-right:solid 1px #cacaca;
+
+}
+
+.contactForm dd{
+    width: 470px;
+    padding: 0 0 13px 20px;
+    margin:0 0 0 0;
+    text-align: left;
+
+    border-top:solid 1px #cacaca;
+    border-bottom:solid 1px #cacaca;
+    border-collapse: collapse;
+}
+
+.contactForm p{
+    padding-bottom: 16px;
+}
+
+.ContactTextInput{
+    margin-top: 15px;
+    width: 350px;
+    height:36px;
+}
+
+.contactForm textarea{
+    width: 350px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.contactSelect{
+    margin-top: 35px;
+    width: 350px;
+    height:40px;
+}
+
+.contactButton{
+    width: 1365px;
+    height:180px;
+    padding-top:30px;
+    padding-bottom: 60px;
+}
+
+.contactBtn{
+    display:inline-block;
+    width: 350px;
+    height: 80px;
+    margin: 0px auto;
+    font-size: 22px;
+    color: white;
+    padding-top:22px;
+    padding-bottom: 20px;
+    background-color:#ffd61a;
+    text-decoration: none;
+    text-align: center;
+    border:none;
+
+}
+
+.contactBtn:hover{
+    opacity:0.7;
+  }
+
+/* contact コンテンツ指定 始点*/
+
+/* フッター コンテンツ指定 始点*/
+
+
+
+.footerWrapper{
+    width: 1365px;
+    text-align: center;
+ }
+
+ .footer{
+     width: 1365px;
+     height: 78px;
+     background-color: #707070;
+     color: #fafafa;
+     font-size: 18px;
+ }  
+
+ .footer p{
+     padding-top: 30px;
+     font-size: 18px;
+}  
+
+
+ /* フッター コンテンツ指定 終点*/
