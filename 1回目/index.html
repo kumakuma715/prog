@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+　<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>夏休みのプラン決めゲーム</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+　</head>
+
+　<body>
+   <div class="contentsContainer"> 
+    
+    <div class="contentsTitleContainer">
+        <h1>夏休みのプラン決めゲーム</h1>
+    </div>
+
+    <div class="introduction">
+        <p>あなたは何タイプ？</p>
+    </div>
+    <div class="btnContainer">
+        <input class="selectBtn" type="button" value="インドア派" onclick="rsp(0);">
+        <input class="selectBtn" type="button" value="アウトドア派" onclick="rsp(1);">
+        <input class="selectBtn" type="button" value="選べない！" onclick="rsp(2);">
+    </div>
+
+    <div class="resultMessageContainer">
+        <p id="player"></p><p id="pc"></p><p id="resultMessage"></p>
+    </div>
+    
+  </div>
+　</body>
+
+</html>
