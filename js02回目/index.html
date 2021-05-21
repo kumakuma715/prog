@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet" >
+    <title>ひとこと日記～365日の記録～</title>
+</head>
+
+<body>
+    <div class="headerWrapper">
+        <h1>MY DIARY</h1>
+    </div>
+
+    <div class="bodyWrapper">
+        <div class="inputWrapper">
+            <!-- 内容の入力 -->
+            <div class="inputBoxWrapper">
+                <tr>
+                    <th><a>　　　日付　　：</a></th>                                
+                    <th><input type="date" id="inputDay" class="inputDay inputBox"></th>
+                </tr><br>
+                <tr>
+                    <th><a>今日のひとこと：</a></th>                                
+                    <th><input type="text" id="todayDiary" class="todayDiary inputBox"></th>
+                </tr>
+            </div>
+            <!-- 内容削除 or 保存 -->
+            <div class="inputBtnWrapper">
+                <button id="clearBtn" class="clearBtn btn">書き直す</button>
+                <button id="saveBtn" class="saveBtn btn">保存</button>
+            </div>
+        </div>
+
+        <div class="dateWrapper">
+            <!-- 保存したデータを表示 -->
+            <table id="dataList" class="dataList">
+                <tr>
+                    <th class="leftBox">DATE</th>
+                    <th class="rightBox">DIARY</th>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <div class="footerWrapper">
+        <h2>365days</h2>
+    </div>
+
+    <script>
+    // クリックイベント　「書き直す」を押した場合
+    $("#clearBtn").on('click', function() { 
+        $("#inputDay").val("");
+        $("#todayDiary").val("");
+    });   
+    
+    // クリックイベント　「保存」を押した場合 -->
+    $("#saveBtn").on('click', function() {
+        const key = $("#inputDay").val();
+        const value = $("#todayDiary").val();
+ 
+        console.log(key);
+        console.log(value);
+
+        if(key === "" || value === "" ){
+            alert("入力漏れがあります！確認してください！")
+        }
+
+        else{
+            //localStorageに入力した値を保存する
+            localStorage.setItem(key,value); 
+
+            //テンプレートリテラルでhtmlにデータを表示
+            const html =`
+            <tr>
+                <td>${key}</td>
+                <td>${value}</td>
+            </tr>
+            `
+            // "const html" をjQueryを使用して埋め込み
+            $("#dataList").append(html);
+    
+            //入力欄をクリアする
+            $("#inputDay").val("");
+            $("#todayDiary").val("");
+        }
+    });
+
+    // ページをリロードしてもデータが消えないように保存
+    for(let i=0; i<localStorage.length; i++){
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+        
+        // データの表示
+        const html = `
+        <tr>
+            <td class="leftBox">${key}</td>
+            <td class="rightBox">${value}</td>
+        </tr>
+        `
+        $("#dataList").append(html);
+    }  
+    </script>
+</body>
+</html>

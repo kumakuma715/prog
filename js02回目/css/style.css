@@ -1,0 +1,121 @@
+body{
+    text-align: center;
+    background: #dfefff;
+}
+
+.headerWrapper{
+    margin-top: 20px;
+    height: 100px;
+    background: #d0e6fd;
+    box-shadow: 0px 0px 0px 5px #dfefff;
+    border: dashed 5px rgba(255, 255, 255, 0.342);
+    padding: 0.2px 0.5px;
+    
+}
+
+h1{
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255);
+    height: 80px;
+}
+
+h2{
+    font-size: 15px;
+    padding-top: 0px;
+    color: rgba(255, 255, 255, 0.438);
+    height: 80px;
+    float: right;
+
+  }
+
+.bodyWrapper{
+    color: rgba(107, 107, 107, 0.9);
+    padding-top: 100px;
+}
+
+.dataList{
+    display: inline-block;
+    text-align: center;
+
+}
+
+.inputBtnWrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    border-radius: 10px;
+    height:30px;
+    width: 100px;
+    color: rgba(107, 107, 107, 0.9);
+    border: #e0d9d9;
+    margin-left: 10px;
+    background-color:rgba(255, 255, 255, 0.74) ;
+}
+
+.btn:hover{
+    width: 100px;
+    color: rgba(5, 5, 5, 0.2);
+    border: #dfefff;
+}
+
+
+.dataList{
+    line-height: 50px;
+
+}
+
+.inputBox{
+    border-radius: 3px;
+    border: dashed 2px rgba(255, 255, 255, 0.342);
+    width: 250px;
+    margin-bottom: 10px;
+    background-color:rgba(255, 255, 255, 0.74) ;
+}
+
+
+
+th{
+    padding-left:40px;
+    padding-right: 40px;
+    border: dashed 2px rgba(255, 255, 255, 0.7);
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+}
+
+
+td{
+    padding-left: 30px;
+    padding-right: 30px;
+    border: dashed 2px rgba(255, 255, 255, 0.7);
+}
+
+.rightBox{
+    width:400px;
+    background-color:rgba(255, 255, 255, 0.2) ;
+}
+
+.leftBox{
+    width:150px;
+    background-color:rgba(255, 255, 255, 0.2) ;
+}
+
+.dateWrapper{
+    margin-top: 80px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+}
+
+.footerWrapper{
+    height: 15px;
+    margin-top: 40px;
+    background: #d0e6fd;
+    box-shadow: 0px 0px 0px 5px #dfefff;
+    padding: 0.2px 0.5px;
+    border: dashed 2px rgba(255, 255, 255, 0.342);
+
+}
